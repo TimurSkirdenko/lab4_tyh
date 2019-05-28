@@ -14,6 +14,11 @@ namespace lab4_tyh
             main.MainFunc(comboBox1, comboBox2);
             comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            foreach (string region in MainBL.region_)
+            {
+                comboBox1.Items.Add(region);
+            }
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
