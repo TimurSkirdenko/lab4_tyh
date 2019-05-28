@@ -18,10 +18,7 @@ namespace lab4_tyh
             {
                 comboBox1.Items.Add(region);
             }
-            foreach (string region in MainBL.disease_)
-            {
-                comboBox4.Items.Add(region);
-            }
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
